@@ -498,3 +498,122 @@ ul {
     color: var(--white);
     transform: translateY(-5px);
 }
+
+/* Footer */
+.footer {
+    background: var(--dark-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    /* Tablet Styles */
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .home-content {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+     .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-social {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile Styles */
+    .navbar-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: var(--white);
+        width: 100%;
+        padding: 2rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+    }
+
+    .navbar-menu.active {
+        left: 0;
+    }
+
+      .navbar-item {
+        margin: 1rem 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+       .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .home-heading {
+        font-size: 2.5rem;
+    }
+
+       .home-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Small Mobile Styles */
+    .home-heading {
+        font-size: 2rem;
+    }
+
+    .home-description {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+    }
+
+      .project-links {
+        flex-direction: column;
+    }
+
+    .project-link {
+        justify-content: center;
+    }
+}
