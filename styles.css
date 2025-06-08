@@ -174,3 +174,55 @@ ul {
     background: var(--dark-color);
     transition: var(--transition);
 }
+
+/* Home Section */
+.home {
+    padding-top: 6rem;
+    background: var(--light-color);
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 6rem);
+}
+
+.home-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.home-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-heading span {
+    color: var(--primary-color);
+}
+
+.home-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.home-btn {
+    font-size: 1rem;
+}
+
+.home-img-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
