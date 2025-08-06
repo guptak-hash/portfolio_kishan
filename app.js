@@ -119,5 +119,5 @@ function downloadAndOpenResume(event) {
         if (!newTab || newTab.closed) {
             alert('Popup blocked! Please allow popups for this site to view the resume.');
         }
-    }, 50); /
+    }, 50); 
 }
