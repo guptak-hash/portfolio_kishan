@@ -129,7 +129,7 @@ a {
     /* object-fit: cover; */
       object-fit: scale-down;
     object-position: center 30%; /* Adjust this! Try 20%-40% */
-     background-color: #f0f0f0;
+     background-color: #9dece8;;
 }
 
 .intro-text {
