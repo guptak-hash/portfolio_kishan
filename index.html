@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets\icons8-avatar-96.png" type="image/x-icon">
 </head>
+
 <body>
 
     <header class="navbar">
@@ -18,7 +20,10 @@
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a href="https://drive.google.com/file/d/1DdxSlwKAyuVpuxFKM7Ph-x-DquWCgGIS/view?usp=sharing" download="Kishan Gupta-Resume.pdf" target="_blank" class="resume-button-nav">Resume</a>
+                <a href="https://drive.google.com/file/d/1DdxSlwKAyuVpuxFKM7Ph-x-DquWCgGIS/view?usp=sharing"
+                    target="_blank" class="resume-button-nav" onclick="downloadAndOpenResume(event)">
+                    Resume
+                </a>
             </nav>
             <div class="hamburger">
                 <span></span>
@@ -34,7 +39,8 @@
                 <img src="assets\edt04.jpg" alt="Your Name" class="profile-photo">
                 <div class="intro-text">
                     <h1>Hi, I'm Kishan Gupta</h1>
-                    <p>A passionate software developer specializing in building modern and responsive web applications. I love turning ideas into reality through code.</p>
+                    <p>A passionate software developer specializing in building modern and responsive web applications.
+                        I love turning ideas into reality through code.</p>
                     <!-- <a href="https://drive.google.com/uc?export=download&id=1DdxSlwKAyuVpuxFKM7Ph-x-DquWCgGIS" download="Kishan Gupta-Resume.pdf" class="resume-button-home">Download Resume</a> -->
                 </div>
             </div>
@@ -43,12 +49,12 @@
         <section id="about" class="about-section">
             <div class="container">
                 <h2>About Me</h2>
-                <p>Hello! I'm a BCA graduate with 2 years of experience in technical support. 
-                    After that, I completed a 9-month intensive Full Stack Web Development (MERN) course. 
-                    I've built several solo full-stack projects and am now looking for a Full Stack Developer 
+                <p>Hello! I'm a BCA graduate with 2 years of experience in technical support.
+                    After that, I completed a 9-month intensive Full Stack Web Development (MERN) course.
+                    I've built several solo full-stack projects and am now looking for a Full Stack Developer
                     role to apply my skills and grow further.
 
-</p>
+                </p>
             </div>
         </section>
 
@@ -58,14 +64,20 @@
                 <div class="skills-grid">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                        alt="Tailwind CSS">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        alt="VS Code">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon-inverted">  </div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" class="icon-inverted">
                 </div>
+            </div>
             </div>
         </section>
 
@@ -73,8 +85,10 @@
             <div class="container">
                 <h2>GitHub Statistics</h2>
                 <div class="github-stats-container">
-                     <img src="https://github-readme-stats.vercel.app/api?username=guptak-hash&show_icons=true&theme=dark" alt="GitHub Stats">
-                     <img src="https://github-readme-streak-stats.herokuapp.com/?user=guptak-hash&theme=dark" alt="GitHub Streak">
+                    <img src="https://github-readme-stats.vercel.app/api?username=guptak-hash&show_icons=true&theme=dark"
+                        alt="GitHub Stats">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=guptak-hash&theme=dark"
+                        alt="GitHub Streak">
                 </div>
                 <div class="github-calendar">
                     <img src="https://ghchart.rshah.org/guptak-hash" alt="GitHub Activity Calendar">
@@ -89,9 +103,11 @@
                     <div class="project-card">
                         <img src="assets\e-commerce.png" alt="Project 1">
                         <h3>E-Commerce Store</h3>
-                        <p>React/Redux e-commerce site with Firebase(user data) and realtime DB. 
-                            Implemented authenticaton(token in localStorage) product search/filters, cart persistence (localStorage)
-                             and responsive UI. Showcases Redux Toolkit best practices, API integration, and state management.</p>
+                        <p>React/Redux e-commerce site with Firebase(user data) and realtime DB.
+                            Implemented authenticaton(token in localStorage) product search/filters, cart persistence
+                            (localStorage)
+                            and responsive UI. Showcases Redux Toolkit best practices, API integration, and state
+                            management.</p>
                         <div class="tech-stack">
                             <span>React</span>
                             <span>Redux</span>
@@ -99,18 +115,19 @@
                             <span>CSS3</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/guptak-hash/Project1/tree/master/e-commerce" target="_blank" class="button">GitHub</a>
+                            <a href="https://github.com/guptak-hash/Project1/tree/master/e-commerce" target="_blank"
+                                class="button">GitHub</a>
                             <a href="https://heavenstore.netlify.app/" target="_blank" class="button">Live Demo</a>
                         </div>
                     </div>
-                   <div class="project-card">
+                    <div class="project-card">
                         <img src="assets\noteApp.png" alt="Project 3">
                         <h3>PinNote</h3>
-                        <p>A full-stack note-taking app with secure authentication (JWT), real-time CRUD operations, 
-                            pinned notes, and search. Built with React, Node.js, 
+                        <p>A full-stack note-taking app with secure authentication (JWT), real-time CRUD operations,
+                            pinned notes, and search. Built with React, Node.js,
                             Express, MongoDB, and Redux Toolkit, showcasing modern full-stack development skills.</p>
                         <div class="tech-stack">
-                             <span>React</span>
+                            <span>React</span>
                             <span>TailwindCSS</span>
                             <span>Node JS</span>
                             <span>Express</span>
@@ -119,18 +136,22 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/guptak-hash/MERN_Note" target="_blank" class="button">GitHub</a>
-                            <a href="https://mern-note-frontend-fnpu.onrender.com/login" target="_blank" class="button">Live Demo</a>
+                            <a href="https://mern-note-frontend-fnpu.onrender.com/login" target="_blank"
+                                class="button">Live Demo</a>
                         </div>
                     </div>
                     <div class="project-card">
                         <img src="assets\carRental.png" alt="Project 3">
                         <h3>GoCar</h3>
-                        <p>A full-stack car rental platform built with React.js and Node.js featuring dual-role functionality 
-                            for customers and car owners. Users can browse and book vehicles with date selection, while owners 
-                            manage their fleet through an admin dashboard with analytics and booking management. 
-                            Implements JWT authentication, image upload with ImageKit, and responsive design using MongoDB, Express.js, and Tailwind CSS.</p>
+                        <p>A full-stack car rental platform built with React.js and Node.js featuring dual-role
+                            functionality
+                            for customers and car owners. Users can browse and book vehicles with date selection, while
+                            owners
+                            manage their fleet through an admin dashboard with analytics and booking management.
+                            Implements JWT authentication, image upload with ImageKit, and responsive design using
+                            MongoDB, Express.js, and Tailwind CSS.</p>
                         <div class="tech-stack">
-                             <span>React</span>
+                            <span>React</span>
                             <span>TailwindCSS</span>
                             <span>Node JS</span>
                             <span>Express</span>
@@ -138,8 +159,10 @@
                             <span>Redux Toolkit</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/guptak-hash/MERN_Rental" target="_blank" class="button">GitHub</a>
-                            <a href="https://mern-rental-frontend-ihoyehshd-kishan-guptas-projects-51dd566f.vercel.app" target="_blank" class="button">Live Demo</a>
+                            <a href="https://github.com/guptak-hash/MERN_Rental" target="_blank"
+                                class="button">GitHub</a>
+                            <a href="https://mern-rental-frontend-ihoyehshd-kishan-guptas-projects-51dd566f.vercel.app"
+                                target="_blank" class="button">Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -168,4 +191,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

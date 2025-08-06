@@ -97,3 +97,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+function downloadAndOpenResume(event) {
+    // Prevent default link behavior (we'll handle both actions)
+    event.preventDefault();
+    
+    // (1) FIRST: Force PDF download (using Google Drive's export link)
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1DdxSlwKAyuVpuxFKM7Ph-x-DquWCgGIS';
+    downloadLink.download = 'Kishan-Gupta-Resume.pdf'; // Sets the filename
+    document.body.appendChild(downloadLink);
+    downloadLink.click(); // Triggers download
+    document.body.removeChild(downloadLink); // Clean up
+    
+  
+
+      setTimeout(() => {
+        const newTab = window.open(event.target.href, '_blank');
+        // Fallback in case popup is blocked
+        if (!newTab || newTab.closed) {
+            alert('Popup blocked! Please allow popups for this site to view the resume.');
+        }
+    }, 50); /
+}
