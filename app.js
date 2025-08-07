@@ -105,7 +105,7 @@ function downloadAndOpenResume(event) {
     
     // (1) FIRST: Force PDF download (using Google Drive's export link)
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1DdxSlwKAyuVpuxFKM7Ph-x-DquWCgGIS';
+    downloadLink.href = 'https://drive.google.com/file/d/1g3HXglfR-ifK8sgAEFnDs-ODHC-xKFVf/view?usp=sharing';
     downloadLink.download = 'Kishan-Gupta-Resume.pdf'; // Sets the filename
     document.body.appendChild(downloadLink);
     downloadLink.click(); // Triggers download
