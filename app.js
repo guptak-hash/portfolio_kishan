@@ -100,24 +100,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function downloadAndOpenResume(event) {
-    // Prevent default link behavior (we'll handle both actions)
+    // Prevent default link behavior
     event.preventDefault();
     
-    // (1) FIRST: Force PDF download (using Google Drive's export link)
-    const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/file/d/1g3HXglfR-ifK8sgAEFnDs-ODHC-xKFVf/view?usp=sharing';
-    downloadLink.download = 'Kishan-Gupta-Resume.pdf'; // Sets the filename
-    document.body.appendChild(downloadLink);
-    downloadLink.click(); // Triggers download
-    document.body.removeChild(downloadLink); // Clean up
+    // Store the original URL from the link
+    const resumeUrl = 'https://drive.google.com/file/d/1g3HXglfR-ifK8sgAEFnDs-ODHC-xKFVf/view?usp=sharing';
     
-  
-
-      setTimeout(() => {
-        const newTab = window.open(event.target.href, '_blank');
+    // (1) FIRST: Force PDF download using Google Drive's export URL
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1g3HXglfR-ifK8sgAEFnDs-ODHC-xKFVf';
+    downloadLink.download = 'Kishan-Gupta-Resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+    
+    // (2) SECOND: Open the resume in a new tab for viewing
+    setTimeout(() => {
+        const newTab = window.open(resumeUrl, '_blank');
         // Fallback in case popup is blocked
         if (!newTab || newTab.closed) {
             alert('Popup blocked! Please allow popups for this site to view the resume.');
         }
-    }, 50); 
+    }, 100); // Slightly increased delay to ensure download starts first
 }
