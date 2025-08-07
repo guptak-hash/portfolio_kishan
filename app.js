@@ -123,3 +123,4 @@ function downloadAndOpenResume(event) {
         }
     }, 100); // Slightly increased delay to ensure download starts first
 }
+
