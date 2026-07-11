@@ -187,7 +187,7 @@ function downloadAndOpenResume(e) {
     // Trigger download
     const a = document.createElement("a");
     a.href = downloadUrl;
-    a.download = "Kishan-Gupta-Resume.pdf";
+    a.download = "Kishan_Resume_WD.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
