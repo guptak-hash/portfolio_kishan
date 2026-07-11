@@ -151,11 +151,11 @@ class NavigationManager {
 function downloadAndOpenResume(event) {
     event.preventDefault();
 
-    const resumeUrl = 'https://drive.google.com/file/d/1ZCzWKlw1yFnnlNj0-8AZ4hEprLx-BRml/view?usp=sharing';
+    const resumeUrl = 'https://drive.google.com/file/d/1VYlJLv5TvKP8vLXWhqAJhEPQaAQYdSMe/view?usp=drive_link';
 
     // Force PDF download
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1ZCzWKlw1yFnnlNj0-8AZ4hEprLx-BRml';
+    downloadLink.href = 'https://drive.google.com/file/d/1VYlJLv5TvKP8vLXWhqAJhEPQaAQYdSMe/view?usp=drive_link';
     downloadLink.download = 'Kishan-Gupta-Resume.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
