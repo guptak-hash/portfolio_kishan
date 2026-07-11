@@ -148,26 +148,49 @@ class NavigationManager {
 }
 
 // Resume download function
-function downloadAndOpenResume(event) {
-    event.preventDefault();
+// function downloadAndOpenResume(event) {
+//     event.preventDefault();
 
-    const resumeUrl = 'https://drive.google.com/file/d/1VYlJLv5TvKP8vLXWhqAJhEPQaAQYdSMe/view?usp=drive_link';
+//     const resumeUrl = 'https://drive.google.com/file/d/1VYlJLv5TvKP8vLXWhqAJhEPQaAQYdSMe/view?usp=drive_link';
 
-    // Force PDF download
-    const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/file/d/1VYlJLv5TvKP8vLXWhqAJhEPQaAQYdSMe/view?usp=drive_link';
-    downloadLink.download = 'Kishan-Gupta-Resume.pdf';
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+//     // Force PDF download
+//     const downloadLink = document.createElement('a');
+//     downloadLink.href = 'https://drive.google.com/file/d/1VYlJLv5TvKP8vLXWhqAJhEPQaAQYdSMe/view?usp=drive_link';
+//     downloadLink.download = 'Kishan-Gupta-Resume.pdf';
+//     document.body.appendChild(downloadLink);
+//     downloadLink.click();
+//     document.body.removeChild(downloadLink);
 
-    // Open in new tab
-    setTimeout(() => {
-        const newTab = window.open(resumeUrl, '_blank');
-        if (!newTab || newTab.closed) {
-            alert('Popup blocked! Please allow popups for this site to view the resume.');
-        }
-    }, 100);
+//     // Open in new tab
+//     setTimeout(() => {
+//         const newTab = window.open(resumeUrl, '_blank');
+//         if (!newTab || newTab.closed) {
+//             alert('Popup blocked! Please allow popups for this site to view the resume.');
+//         }
+//     }, 100);
+// }
+
+
+function downloadAndOpenResume(e) {
+    e.preventDefault();
+
+    const fileId = "1VYlJLv5TvKP8vLXWhqAJhEPQaAQYdSMe";
+
+    const viewUrl = `https://drive.google.com/file/d/${fileId}/view`;
+
+    const downloadUrl =
+        `https://drive.google.com/uc?export=download&id=${fileId}`;
+
+    // Open resume in new tab
+    window.open(viewUrl, "_blank");
+
+    // Trigger download
+    const a = document.createElement("a");
+    a.href = downloadUrl;
+    a.download = "Kishan-Gupta-Resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 }
 
 // Initialize everything when DOM is loaded
